@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body,html
+{
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+}
+#Body
+{
+    width:100vw;
+    height:100vh;
+    background-image: url('images/bg1.jpg');
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.glassCard
+{
+    padding:20px;
+    width:40%;  
+    height:40%;
+    background-color: white;
+    z-index: 100;
+    border:1px solid black;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius:10px;
+}
+#backdrop
+{
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    backdrop-filter: brightness(80%);
+}
+#checkbox
+{
+    margin-right:15px;
+    cursor: pointer;
+    transform:scale(1.2);
+    transition-duration: 0.2s;
+}
+#checkbox:checked
+{
+    transform: scale(2);
+}
+.link
+{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.link:hover
+{
+    font-weight: 500;
+}
+.icon
+{
+    color:white;
+    font-weight: 100;
+    padding:5px;
+    border-radius:100%;
+    background-color:transparent;
+    transition-duration: 0.3;
+}
+.icon:hover
+{
+    background-color:rgba(255, 255, 255, 0.146);
+}
+#warning
+{
+    padding:0px;
+    position:fixed;
+    top:-50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:0vw;
+    white-space: nowrap;
+    background-color: #2c2a2a70;
+    border-radius:35px;
+    border:1px solid transparent;
+    transition-duration: 0.3s;
+    overflow:hidden;
+}
+#warning:hover
+{
+    border:1px solid rgba(255, 255, 255, 0.733);
+    cursor:pointer;
+}
+.headingTxt
+{
+    font-family: 'Poppins',sans-serif;
+    color:grey;
+    font-size:2.7rem;
+    margin:0px;
+}
+.subheadingTxt
+{
+    font-family: 'Poppins',sans-serif;
+    font-size:1.0rem;
+    font-weight:200;
+    margin:0px;
+}
+form
+{
+    margin-top:10px;
+    height:80%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.formInput
+{
+    width:90%;
+    padding: 10px 15px;
+    font-family: 'Poppins',sans-serif;
+    font-size:1.0rem;
+    min-width: 200px;
+    margin-bottom:5px;
+}
